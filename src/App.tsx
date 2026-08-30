@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
           <header className="sticky">
               <span className="logo">
-                  <img src="/assets/logo-3.svg" alt="logo" width="49" height="99" />
+                  <img src="/assets/logo-3.svg" alt="logo" width="49" height="62" />
               </span>
               <NavLink to="/" className="button rounded">
                   <span className="icon-home"></span>
