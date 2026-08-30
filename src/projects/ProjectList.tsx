@@ -19,22 +19,13 @@ function ProjectList({ projects, onSave }: ProjectListProps) {
         setProjectBeingEdited({});
     }
 
-    /*const items = projects.map(project => (
-        <div key={project.id} className="cols-sm">
-            {project === projectBeingEdited ? (
-                <ProjectForm />
-            ) : (
-                <ProjectCard project={project} onEdit={handleEdit} />
-            )}
-        </div>
-    ));
-    return <div className="row">{items}</div>;*/
     return (
         <div className="row">
             {projects.map((project) => (
                 <div key={project.id} className="cols-sm">
                     {project === projectBeingEdited ? (
                         <ProjectForm
+                            project={project}
                             onSave={onSave}
                             onCancel={cancelEditing}
                         />
